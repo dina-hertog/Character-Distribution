@@ -39,12 +39,15 @@ Notice about this example:
 text = input("Please enter a string of text (the bigger the better):")
 text = text.lower()
 length = len(text)
-a = 0
+print(length)
+list[text.count(a)]
+length(len.list)
+print(lenghtA)
 
-while a <= lenght:
-    (a)text.count(text[int(zero)])
-    print(a)
-    a = int(a)+1
+#while a <= lenght:
+    #(a)text.count(text[int(zero)])
+    #print(a)
+    #a = int(a)+1
 
 
 

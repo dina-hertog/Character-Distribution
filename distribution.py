@@ -53,10 +53,6 @@ while letter < length:
         print(a, b)
         letter = int(letter)+1
 
-#b = text.count(text[1])
-#print(b)
-#c = text.count(text[2])
-#print(c)
 
 
 

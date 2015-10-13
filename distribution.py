@@ -39,21 +39,22 @@ Notice about this example:
 text = input("Please enter a string of text (the bigger the better):")
 text = text.lower()
 length = len(text)
-#letter = 0
+letter = 0
 
-#while length > 0:
-    #print(text[letter])
-    #listA = text.count(text[0])
-    #print(listA)
-    #length = length-1
-    #letter = letter + 1
-    
+while letter < length:
+    b = text[letter]
+    used = [letter]
+    if b == used:
+        letter = int(letter)+1
+    else:
+        a = text.count(b)
+        print(a + b)
+        letter = int(letter)+1
 
-a = text.count(text[0])
-print(a)
-b = text.count(text[1])
-print(a)
-
+#b = text.count(text[1])
+#print(b)
+#c = text.count(text[2])
+#print(c)
 
 
 

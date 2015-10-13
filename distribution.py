@@ -40,17 +40,13 @@ text = input("Please enter a string of text (the bigger the better):")
 text = text.lower()
 length = len(text)
 print(length)
-list[text.count(a)]
-length(len.list)
-print(lenghtA)
+listA = text.count('a')
+print(listA)
+b = 1
 
-#while a <= lenght:
-    #(a)text.count(text[int(zero)])
-    #print(a)
-    #a = int(a)+1
-
-
-
+while b> 0:
+    listA = text.count(
+    b = b-1
 
 
 

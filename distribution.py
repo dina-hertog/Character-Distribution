@@ -37,6 +37,7 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 text = input("Please enter a string of text (the bigger the better):")
+print("The distribution of characters in " + text + " is:")
 text = text.lower()
 length = len(text)
 letter = 0
@@ -46,7 +47,7 @@ while letter < length:
     used = [letter]
     if b == used:
         letter = int(letter)+1
-    elif b == ' ' or b == '-':
+    elif b == ' ' or b == '-' or b == '.' or b== ',':
         letter = int(letter)+1
     else:
         a = text.count(b)

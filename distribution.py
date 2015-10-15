@@ -58,7 +58,6 @@ while letter < length:
             a = a-1
         letter = letter+1
         print('')
-adsjfhajdlks
 
 
 

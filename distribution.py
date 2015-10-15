@@ -36,29 +36,29 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
-input("hjaskdhf")
 text = input("Please enter a string of text (the bigger the better):")
 print("The distribution of characters in " + text + " is:")
 text = text.lower()
 length = len(text)
 letter = 0
+i = 0
+used = []
 
 while letter < length:
     b = text[letter]
-    used = [letter]
     used.append(b)
     #print(used)
-    if b == used:
+    if b == i in used:
         letter = letter+1
     elif b == ' ' or b == '-' or b == '.' or b== ',':
         letter = letter+1
     else:
         a = text.count(b)
         while a >= 1:
-            print("")
             print (b, end = '')
             a = a-1
         letter = letter+1
+        print('')
 
 
 

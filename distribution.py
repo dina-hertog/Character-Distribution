@@ -53,9 +53,9 @@ while letter < length:
         letter = int(letter)+1
     else:
         a = text.count(b)
-        if a >= 1:
+        while a >= 1:
             print (b)
-            a = a+1
+            a = a-1
         letter = int(letter)+1
 
 

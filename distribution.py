@@ -41,20 +41,21 @@ print("The distribution of characters in " + text + " is:")
 text = text.lower()
 length = len(text)
 letter = 0
-i = 0
 
 while letter < length:
     b = text[letter]
     used = [letter]
     used.append(b)
-    #print(used)
-    if i in used == b:
+    print(used)
+    if b == used:
         letter = int(letter)+1
     elif b == ' ' or b == '-' or b == '.' or b== ',':
         letter = int(letter)+1
     else:
         a = text.count(b)
-        print(a, b)
+        if a >= 1:
+            print (b)
+            a = a+1
         letter = int(letter)+1
 
 

@@ -46,7 +46,7 @@ while letter < length:
     b = text[letter]
     used = [letter]
     used.append(b)
-    print(used)
+    #print(used)
     if b == used:
         letter = int(letter)+1
     elif b == ' ' or b == '-' or b == '.' or b== ',':
@@ -54,7 +54,7 @@ while letter < length:
     else:
         a = text.count(b)
         while a >= 1:
-            print (b)
+            print (b, end'')
             a = a-1
         letter = int(letter)+1
 

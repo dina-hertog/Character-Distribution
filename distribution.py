@@ -36,6 +36,7 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+input("hjaskdhf")
 text = input("Please enter a string of text (the bigger the better):")
 print("The distribution of characters in " + text + " is:")
 text = text.lower()
@@ -48,16 +49,16 @@ while letter < length:
     used.append(b)
     #print(used)
     if b == used:
-        letter = int(letter)+1
+        letter = letter+1
     elif b == ' ' or b == '-' or b == '.' or b== ',':
-        letter = int(letter)+1
+        letter = letter+1
     else:
         a = text.count(b)
         while a >= 1:
             print("")
             print (b, end = '')
             a = a-1
-        letter = int(letter)+1
+        letter = letter+1
 
 
 

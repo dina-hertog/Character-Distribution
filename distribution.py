@@ -45,6 +45,8 @@ letter = 0
 while letter < length:
     b = text[letter]
     used = [letter]
+    used.append(b)
+    #print(used)
     if b == used:
         letter = int(letter)+1
     elif b == ' ' or b == '-' or b == '.' or b== ',':

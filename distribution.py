@@ -54,7 +54,8 @@ while letter < length:
     else:
         a = text.count(b)
         while a >= 1:
-            print (b, end'')
+            print("")
+            print (b, end = '')
             a = a-1
         letter = int(letter)+1
 

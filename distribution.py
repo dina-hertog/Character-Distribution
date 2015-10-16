@@ -43,8 +43,6 @@ length = len(text)
 letter = 0
 used = []
 
-for b in (text):
-    0 < 12
 while int(letter) <= int(length):
     b = text[letter]
     used.append(b)

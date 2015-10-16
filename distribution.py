@@ -43,20 +43,22 @@ length = len(text)
 letter = 0
 used = []
 
-while letter < length:
+for b in (text):
+    0 < 12
+while int(letter) <= int(length):
     b = text[letter]
     used.append(b)
-    print(used)
-    for b in used:
-        letter = letter+1
+    #print(used)
+    if b in used:
+        letter = int(letter)+1
     elif b == ' ' or b == '-' or b == '.' or b== ',':
-        letter = letter+1
+        letter = int(letter)+1
     else:
         a = text.count(b)
         while a >= 1:
             print (b, end = '')
             a = a-1
-        letter = letter+1
+        letter = int(letter)+1
         print('')
 
 

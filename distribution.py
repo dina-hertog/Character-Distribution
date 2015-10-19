@@ -51,7 +51,7 @@ while letter < length:
         dis.append(text.count(b))
         used.append(b)
 
-c = zip(dis,used)
-print(list(c))
+c = list(zip(dis,used))
+print(c)
 
 

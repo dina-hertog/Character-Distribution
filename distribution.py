@@ -41,6 +41,7 @@ print("The distribution of characters in " + text + " is:")
 text = text.lower()
 length = len(text)
 letter = 0
+letter2 = 0
 used = []
 dis = []
 
@@ -52,6 +53,10 @@ while letter < length:
         used.append(b)
 
 c = list(zip(dis,used))
+c.sort()
+c = c[::-1]
+while letter2 < length:
+    letter2 = letter2+1
 print(c)
 
 

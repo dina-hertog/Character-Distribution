@@ -50,11 +50,8 @@ while letter < length:
     if not( b in used or b == ' ' or b == '-' or b == '.' or b== ','):
         dis.append(text.count(b))
         used.append(b)
-        print(zip(dis, used))
 
 c = zip(dis,used)
-print(c)
-print("hello")
-
+print(list(c))
 
 

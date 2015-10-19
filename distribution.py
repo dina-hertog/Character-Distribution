@@ -56,7 +56,7 @@ while letter < length:
         used.append(b)
         order= zip(dis, used)
 
-print 
+print(order)
 print (b, end = '')
 print('')
 

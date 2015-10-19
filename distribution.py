@@ -46,19 +46,15 @@ dis = []
 
 while letter < length:
     b = text[letter]
-    #print(used)
     letter = letter+1
     if not( b in used or b == ' ' or b == '-' or b == '.' or b== ','):
-        a = text.count(b)
-        while a >= 1:
-            dis.append(a)
-            a = a-1
+        dis.append(text.count(b))
         used.append(b)
         print(zip(dis, used))
 
-#print (b, end = '')
-
-#print("hello")
+c = zip(dis,used)
+print(c)
+print("hello")
 
 
 

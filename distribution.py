@@ -54,7 +54,7 @@ while letter < length:
             dis.append(a)
             a = a-1
         used.append(b)
-        print(zip([dis], [used]))
+        print(zip(dis, used))
 
 #print (b, end = '')
 

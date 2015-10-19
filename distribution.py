@@ -42,6 +42,7 @@ text = text.lower()
 length = len(text)
 letter = 0
 used = []
+dis = []
 
 while letter < length:
     b = text[letter]
@@ -50,13 +51,14 @@ while letter < length:
     if not( b in used or b == ' ' or b == '-' or b == '.' or b== ','):
         a = text.count(b)
         while a >= 1:
-            print (b, end = '')
+            dis.append(a)
             a = a-1
-        print('')
         used.append(b)
+        order= zip(dis, used)
 
-
-
+print 
+print (b, end = '')
+print('')
 
 
 

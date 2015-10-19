@@ -54,12 +54,11 @@ while letter < length:
             dis.append(a)
             a = a-1
         used.append(b)
-        order= zip(dis, used)
+        print(zip([dis], [used]))
 
-print(order)
-print (b, end = '')
-print('')
+#print (b, end = '')
 
+#print("hello")
 
 
 

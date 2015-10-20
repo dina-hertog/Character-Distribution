@@ -48,21 +48,20 @@ while letter < length:
     b = text[letter]
     letter = letter+1
     if not( b in used or b == ' ' or b == '-' or b == '.' or b== ','):
-        #a= text.count(b)
-        #while a > 0:
-            #print(b)
-            #a = a+1
         dis.append(text.count(b))
         used.append(b)
         
 c = list(zip(dis,used))
 c.sort()
 c = c[::-1]
+bignum = c[-1(0)]
 
 for l in c:
-    if c[0] == c[-1]:
-        c.sort()
-        print(l[1]*l[0])
-    #elif l[o] == l[-1]-1:
+    while bignum < 0:
+        if c[0] == c[-1]-bignum:
+            c.sort()
+            print(l[1]*l[0])
+        bignum = bignum+1
+
 
 

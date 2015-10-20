@@ -60,7 +60,7 @@ c.sort()
 c = c[::-1]
 
 for l in c:
-    if l[0] == l[-1]:
+    if c[0] == c[-1]:
         c.sort()
         print(l[1]*l[0])
     #elif l[o] == l[-1]-1:

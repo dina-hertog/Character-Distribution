@@ -54,12 +54,15 @@ while letter < length:
             #a = a+1
         dis.append(text.count(b))
         used.append(b)
-num = 0
+        
 c = list(zip(dis,used))
 c.sort()
-print(c)
 c = c[::-1]
+
 for l in c:
-    print(c[l(1)])*c[l(0)]
+    if l[0] == l[-1]:
+        c.sort()
+        print(l[1]*l[0])
+    #elif l[o] == l[-1]-1:
 
 

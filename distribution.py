@@ -57,10 +57,9 @@ c = c[::-1]
 print(c)
 
 for l in c:
-    num = c[-1][0]
+    num = c[1][0]
     while num > 0:
-        if l[0] == c[-1]num:
-            c.sort()
+        if l[0] == num:
             print(l[1]*l[0])
             print()
         num = num-1

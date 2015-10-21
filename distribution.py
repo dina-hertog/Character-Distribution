@@ -54,14 +54,16 @@ while letter < length:
 c = list(zip(dis,used))
 c.sort()
 c = c[::-1]
-bignum = c[-1(0)]
+print(c)
 
 for l in c:
-    while bignum < 0:
-        if c[0] == c[-1]-bignum:
+    num = c[-1][0]
+    while num > 0:
+        if c[0] == c[1]-num:
             c.sort()
             print(l[1]*l[0])
-        bignum = bignum+1
+            print()
+        num = num+1
 
 
 

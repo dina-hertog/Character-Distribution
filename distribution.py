@@ -59,7 +59,7 @@ print(c)
 for l in c:
     num = c[-1][0]
     while num > 0:
-        if c[0] == c[1]-num:
+        if c[0] == num:
             c.sort()
             print(l[1]*l[0])
             print()

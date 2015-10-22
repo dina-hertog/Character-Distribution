@@ -59,7 +59,8 @@ print(c)
 for l in c:
     num = c[1][0]
     while num > 0:
-        if l[0] == num:
+        while l[0] == num:
+            c.sort()
             print(l[1]*l[0])
             print()
         num = num-1

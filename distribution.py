@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Dina
-Credit: none
+Credit: Jazzy
 
 Assignment:
 
@@ -54,6 +54,7 @@ while letter < length:
 c = list(zip(dis,used))
 c.sort()
 c = c[::-1]
+#print(c)
 
 for l in c:
     num = c[1][0]
@@ -61,6 +62,6 @@ for l in c:
         while l[0] == num:
             print(l[1]*l[0])
             l[0] = l[0]+1
-         num = num-1
+        num = num-1
 
 

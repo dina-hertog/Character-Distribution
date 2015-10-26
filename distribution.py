@@ -62,6 +62,8 @@ for l in c:
         d = []
         while l[0] == num:
             d.append(l)
+            d.sort()
+            print(d)
             print(d[1]*d[0])
             l[0] = l[0]+1
         num = num-1

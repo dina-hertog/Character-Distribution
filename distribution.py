@@ -59,9 +59,9 @@ c = c[::-1]
 for l in c:
     num = c[1][0]
     while num > 0:
+        d = []
         while l[0] == num:
-            print(l[1]*l[0])
+            d.append(l[1])
+            print(d)
             l[0] = l[0]+1
         num = num-1
-
-

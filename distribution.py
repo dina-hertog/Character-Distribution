@@ -54,16 +54,16 @@ while letter < length:
 c = list(zip(dis,used))
 c.sort()
 c = c[::-1]
-#print(c)
+print(c)
 
-for l in c:
-    num = c[1][0]
-    while num > 0:
-        d = []
-        while l[0] == num:
+num = c[0][0]
+while num > 0:
+    d = []
+    for l in c:
+        if l[0] == num:
             d.append(l)
-            d.sort()
-            print(d)
-            print(d[1]*d[0])
-            l[0] = l[0]+1
-        num = num-1
+    d.sort()
+    for x in d:
+        print(x[1]*x[0])
+    num -= 1
+

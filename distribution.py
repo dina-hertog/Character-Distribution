@@ -37,7 +37,7 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 text = input("Please enter a string of text (the bigger the better): ")
-print("The distribution of characters in " + text + " is: ")
+print('The distribution of characters in "' + text + '" is: ')
 text = text.lower()
 length = len(text)
 letter = 0

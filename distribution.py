@@ -54,7 +54,6 @@ while letter < length:
 c = list(zip(dis,used))
 c.sort()
 c = c[::-1]
-print(c)
 
 num = c[0][0]
 while num > 0:
